@@ -190,7 +190,8 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-bg/55 via-bg/65 to-bg" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-accent/6 blur-[160px] rounded-full pointer-events-none" />
 
-        <div className="relative max-w-5xl mx-auto px-5 text-center">
+        <div className="relative max-w-5xl mx-auto px-5 text-center md:text-left">
+          <div className="md:max-w-[52%]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -218,7 +219,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg md:text-xl text-ink-dim max-w-2xl mx-auto mb-10 leading-relaxed"
+            className="text-lg md:text-xl text-ink-dim max-w-2xl mx-auto md:mx-0 mb-10 leading-relaxed"
           >
             Aprenda a ler cada fio antes de tocar na química. Do diagnóstico preciso à
             hidratação final, este curso te dá o protocolo completo para entregar resultados
@@ -229,7 +230,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.45 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+            className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mb-12"
           >
             <a
               href={CHECKOUT}
@@ -246,7 +247,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-wrap items-center justify-center gap-6 text-sm text-ink-dimmer"
+            className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-ink-dimmer"
           >
             {["5 módulos + bônus exclusivo", "Acesso vitalício ao conteúdo", "100% online — assiste quando quiser"].map(
               (item) => (
@@ -257,6 +258,7 @@ export default function Home() {
               )
             )}
           </motion.div>
+          </div>
         </div>
       </section>
 

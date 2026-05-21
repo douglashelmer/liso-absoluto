@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0c0b09;
+  --bg-soft: #131109;
+  --bg-card: #1a1710;
+  --ink: #f7f1e8;
+  --ink-dim: #b5a98e;
+  --ink-dimmer: #7a6e5a;
+  --accent: #D4A868;
+  --accent-dark: #B88D45;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-soft: var(--bg-soft);
+  --color-bg-card: var(--bg-card);
+  --color-ink: var(--ink);
+  --color-ink-dim: var(--ink-dim);
+  --color-ink-dimmer: var(--ink-dimmer);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 55%, #fff));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .terminal-glow {
+    box-shadow:
+      0 0 40px -10px var(--accent),
+      0 0 80px -20px color-mix(in srgb, var(--accent) 30%, transparent);
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(212, 168, 104, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212, 168, 104, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}

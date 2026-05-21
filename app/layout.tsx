@@ -45,9 +45,9 @@ export const metadata: Metadata = {
       "Do diagnóstico preciso à hidratação final. O protocolo completo para profissionais de salão entregarem resultados que duram e fidelizam clientes.",
     images: [
       {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
+        url: "/herodesk.webp",
+        width: 1920,
+        height: 1080,
         alt: "Liso Absoluto — Domine a Arte do Alisamento Profissional",
       },
     ],
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Domine a Arte do Alisamento Profissional",
     description: "O protocolo completo — diagnóstico, aplicação científica e pós-tratamento.",
-    images: ["/opengraph-image"],
+    images: ["/herodesk.webp"],
   },
   robots: {
     index: true,

@@ -192,8 +192,8 @@ export default function Home() {
         <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-bg/90 via-bg/50 to-transparent" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-accent/6 blur-[160px] rounded-full pointer-events-none" />
 
-        <div className="relative max-w-5xl mx-auto px-5 text-center md:text-left">
-          <div className="md:max-w-[46%]">
+        <div className="relative w-full px-5 md:pl-16 lg:pl-24 text-center md:text-left">
+          <div className="md:max-w-[440px] lg:max-w-[500px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

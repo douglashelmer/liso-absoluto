@@ -141,7 +141,7 @@ export default function Home() {
     <>
 
       {/* ── Hero ── */}
-      <section className="relative pt-16 pb-24 md:pt-20 md:pb-28 overflow-hidden">
+      <section className="relative min-h-[92vh] md:min-h-0 pt-16 pb-10 md:pt-20 md:pb-28 overflow-hidden flex flex-col md:block">
         {/* Imagem hero — mobile */}
         <div className="absolute inset-0 md:hidden">
           <Image
@@ -170,7 +170,7 @@ export default function Home() {
         <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-bg/90 via-bg/50 to-transparent" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-accent/6 blur-[160px] rounded-full pointer-events-none" />
 
-        <div className="relative w-full px-5 md:pl-16 lg:pl-24 text-center md:text-left">
+        <div className="relative w-full px-5 md:pl-16 lg:pl-24 text-center md:text-left mt-auto md:mt-0">
           <div className="md:max-w-[440px] lg:max-w-[500px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -227,7 +227,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-ink-dimmer"
+            className="hidden md:flex flex-wrap items-center justify-start gap-6 text-sm text-ink-dimmer"
           >
             {["5 módulos + bônus exclusivo", "Acesso vitalício ao conteúdo", "100% online — assiste quando quiser"].map(
               (item) => (

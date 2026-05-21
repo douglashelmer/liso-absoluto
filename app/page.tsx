@@ -593,10 +593,10 @@ export default function Home() {
             <div className="text-center mb-8">
               <div className="text-ink-dim text-sm mb-2">Investimento único</div>
               <div className="font-display text-6xl font-bold text-accent mb-1">
-                R$&nbsp;[PRECO]
+                R$&nbsp;97
               </div>
               <div className="text-ink-dimmer text-sm">
-                ou [X]x de R$&nbsp;[PARCELA] no cartão
+                ou 3x de R$&nbsp;32,33 no cartão
               </div>
             </div>
 

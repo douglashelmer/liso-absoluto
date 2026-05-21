@@ -163,7 +163,7 @@ export default function Home() {
       </nav>
 
       {/* ── Hero ── */}
-      <section className="relative pt-32 pb-24 md:pt-44 md:pb-36 overflow-hidden">
+      <section className="relative pt-32 pb-24 md:pt-36 md:pb-28 overflow-hidden">
         {/* Imagem hero — mobile */}
         <div className="absolute inset-0 md:hidden">
           <Image
@@ -187,11 +187,13 @@ export default function Home() {
           />
         </div>
         <div className="absolute inset-0 grid-bg opacity-30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg/55 via-bg/65 to-bg" />
+        <div className="absolute inset-0 bg-gradient-to-b from-bg/55 via-bg/50 to-bg" />
+        {/* Gradiente horizontal desktop — funde o lado esquerdo */}
+        <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-bg/90 via-bg/50 to-transparent" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-accent/6 blur-[160px] rounded-full pointer-events-none" />
 
         <div className="relative max-w-5xl mx-auto px-5 text-center md:text-left">
-          <div className="md:max-w-[52%]">
+          <div className="md:max-w-[46%]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -208,7 +210,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 text-balance"
+            className="font-display text-4xl md:text-[2.6rem] lg:text-5xl font-bold tracking-tight leading-[1.15] mb-6 text-balance"
           >
             Alisamento que dura,{" "}
             <span className="text-gradient">brilho que impressiona</span>{" "}

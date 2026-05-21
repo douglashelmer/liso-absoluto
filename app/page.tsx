@@ -210,7 +210,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="font-display text-4xl md:text-[2.6rem] lg:text-5xl font-bold tracking-tight leading-[1.15] mb-6 text-balance"
+            className="font-display text-3xl md:text-[2.6rem] lg:text-5xl font-bold tracking-tight leading-[1.2] mb-5 text-balance"
           >
             Alisamento que dura,{" "}
             <span className="text-gradient">brilho que impressiona</span>{" "}
@@ -221,7 +221,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg md:text-xl text-ink-dim max-w-2xl mx-auto md:mx-0 mb-10 leading-relaxed"
+            className="text-sm md:text-lg text-ink-dim max-w-2xl mx-auto md:mx-0 mb-8 leading-snug md:leading-relaxed"
           >
             Aprenda a ler cada fio antes de tocar na química. Do diagnóstico preciso à
             hidratação final, este curso te dá o protocolo completo para entregar resultados
@@ -759,22 +759,6 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* ── Sticky mobile CTA ── */}
-      <div
-        className="md:hidden fixed bottom-0 inset-x-0 z-50 bg-bg-card/95 backdrop-blur-xl border-t border-accent/30 px-4 pt-4"
-        style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}
-      >
-        <a
-          href="#pricing"
-          className="flex items-center justify-between gap-3 px-5 py-3 rounded-full bg-accent text-bg font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg touch-manipulation"
-        >
-          <div className="text-left">
-            <div className="text-xs opacity-75">Acesso vitalício</div>
-            <div className="text-base font-bold">Ver o curso</div>
-          </div>
-          <ArrowRight className="w-5 h-5 shrink-0" aria-hidden="true" />
-        </a>
-      </div>
     </>
   );
 }

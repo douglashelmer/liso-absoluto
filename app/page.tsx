@@ -139,31 +139,9 @@ export default function Home() {
 
   return (
     <>
-      {/* ── Nav ── */}
-      <nav className="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-bg/80 border-b border-white/5">
-        <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/logo.png"
-              alt="Liso Absoluto"
-              width={120}
-              height={36}
-              className="h-9 w-auto object-contain"
-              priority
-            />
-          </div>
-          <a
-            href="#pricing"
-            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-accent/40 text-accent hover:bg-accent hover:text-bg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg font-semibold text-sm"
-          >
-            Ver o curso
-            <ArrowRight className="w-4 h-4" aria-hidden="true" />
-          </a>
-        </div>
-      </nav>
 
       {/* ── Hero ── */}
-      <section className="relative pt-32 pb-24 md:pt-36 md:pb-28 overflow-hidden">
+      <section className="relative pt-16 pb-24 md:pt-20 md:pb-28 overflow-hidden">
         {/* Imagem hero — mobile */}
         <div className="absolute inset-0 md:hidden">
           <Image
